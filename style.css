@@ -109,6 +109,7 @@ a {
     font-size: 40px;
     font-weight: 400;
     padding: 35px;
+    border-bottom: black solid 1px;
 }
 .portfolio-items {
     display: flex;
@@ -155,7 +156,21 @@ a {
 
 .quote{
     display: flex;
-    flex-direction: column;
+    color: white;
+    flex-flow: column wrap;
+    padding: 75px;
+    border:black solid;
+    border-bottom: 1px;
+}
+.quote-saying{
+    display: flex;
+    font-size: 48px;
+    padding: 25px;
+}
+.quotee{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 
