@@ -13,11 +13,11 @@ body {
 
 .header {
     height: 64px;
-    background: darkcyan;
+    background: black;
     color: white;
     display: flex;
     flex-direction: row;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700px;
     justify-content:space-between;
     align-items: center;
@@ -49,23 +49,102 @@ ul {
 
 a {
     text-decoration: none;
-    color: aquamarine;
+    color: wheat;
+    font-weight: 600;
 }
 
 .body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 }
-
 .main {
     display: flex;
+    justify-content: center;
+    background-image: url(./images/Night-Sky-Pan.jpg);
+    color: aliceblue;
+    align-items: center;
+    min-height: 560px;
 }
-
 .title {
-    font-size: 36px;
+    font-size: 56px;
+    font-weight: 700;
 }
 .title-text {
     font-size: 18px;
+    margin: 32px 0px;
+}
+.title-box{
+    height: 320px;
+    width: 560px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    border: 1px wheat;
+    color: aliceblue;
+    background-color: black;
+}
+
+
+button {
+    background-color: lightseagreen;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    cursor:pointer;
+    box-shadow: 50px white;
+}
+button:hover{
+    background-color: white;
+    color: lightseagreen;
+    border-color: lightseagreen;
+}
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-items {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.quote{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.account-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 80px;
+    width: 1120px;
+    margin: 50px;
+    background-color: navy;
+    color: white;
 }
