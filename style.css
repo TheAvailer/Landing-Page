@@ -1,15 +1,28 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "kawashiro", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
 .icon {
     height: 30px;
     width: auto;
 }
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 12px;
+    gap: 16px;
+    flex-direction: row;
+}
+a {
+    text-decoration: none;
+    color: wheat;
+    font-weight: 600;
+}
+
 
 .header {
     height: 64px;
@@ -24,40 +37,26 @@ body {
     position: sticky;
     top: 0;
 }
-
 .left-header, .right-header {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 8px
 }
-
 .header-logo {
     height: 35px;
     width: auto;
     margin: 0px 16px;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    margin: 0px;
-    padding: 12px;
-    gap: 16px;
-    flex-direction: row;
-}
-
-a {
-    text-decoration: none;
-    color: wheat;
-    font-weight: 600;
-}
 
 .body {
     display: flex;
     flex-direction: column;
+    background-image: url(./images/Spirit_Stream_Sect.webp);
 }
 .main {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
     background-image: url(./images/Night-Sky-Pan.jpg);
@@ -79,28 +78,16 @@ a {
 }
 
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 64px;
-    border: 1px wheat;
-    color: aliceblue;
-    background-color: black;
-}
-
-
-button {
+.nothing-button {
     background-color: lightseagreen;
     font-size: 16px;
     padding: 8px 16px;
-    border-radius: 15px;
+    border:ridge 10px black;
     transition-duration: 0.2s;
     cursor:pointer;
-    box-shadow: 50px white;
+    border-radius: 10px;
 }
-button:hover{
+.nothing-button:hover{
     background-color: white;
     color: lightseagreen;
     border-color: lightseagreen;
@@ -110,10 +97,59 @@ button:hover{
 .portfolio {
     display: flex;
     flex-direction: column;
+    padding: 35px;
+    background-color: white;
+    color: black;
+    flex-wrap: wrap;
+}
+.portfolio-title{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 35px;
 }
 .portfolio-items {
     display: flex;
-    flex-direction: row;
+    flex: 1;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+    margin: 35px;
+    height: 220px;
+}
+.portfolio-item{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-icon{
+    border-radius: 25px;
+    border: solid black 5px;
+    height: 150px;
+    width: 150px;
+    padding: 30px;
+    margin: 10px;
+}
+.item-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+.item-desc{
+    display: flex;
+    font-family: "sunflower";
+    width: 260px;
+    text-align: center;
+}
+.portfolio-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
 }
 
 
@@ -145,6 +181,45 @@ button:hover{
     height: 80px;
     width: 1120px;
     margin: 50px;
-    background-color: navy;
+    background-color: lightslategray;
     color: white;
+    border: solid 5px black;
+    border-radius: 25px;
+}
+.account-button {
+    background-color: maroon;
+    font-size: 16px;
+    padding: 8px 32px;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    cursor:pointer;
+    border: solid 0.15em white;
+    font-weight: 700;
+}
+.account-button:hover{
+    background-color: lightseagreen;
+    color: maroon;
+    
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    border-top: solid 1px burlywood;
+    color: white;
+    background-color: black;
+}
+
+
+@font-face {
+    font-family: "kawashiro";
+    src: url(./kawashiroGothic.ttf);
+}
+@font-face {
+    font-family: "sunflower";
+    src: url(./sunflowerHighway.otf);
 }
