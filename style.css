@@ -156,16 +156,17 @@ a {
 
 .quote{
     display: flex;
-    color: white;
+    color: whitesmoke;
     flex-flow: column wrap;
     padding: 75px;
     border:black solid;
     border-bottom: 1px;
+    border-top: 1px;
 }
 .quote-saying{
     display: flex;
     font-size: 48px;
-    padding: 25px;
+    padding: 45px;
 }
 .quotee{
     display: flex;
@@ -176,7 +177,22 @@ a {
 
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    color: white;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+.contact-title{
+    padding: 35px;
+    font-size: 32px;
+}
+.contact-1, .contact-2{
+    padding: 10px;
+
 }
 
 
@@ -195,8 +211,8 @@ a {
     padding: 15px;
     height: 80px;
     width: 1120px;
-    margin: 50px;
-    background-color: lightslategray;
+    margin: 5px;
+    background-color: #202020;
     color: white;
     border: solid 5px black;
     border-radius: 25px;
@@ -208,7 +224,7 @@ a {
     border-radius: 15px;
     transition-duration: 0.2s;
     cursor:pointer;
-    border: solid 0.15em white;
+    border: solid 0.15em black;
     font-weight: 700;
 }
 .account-button:hover{
