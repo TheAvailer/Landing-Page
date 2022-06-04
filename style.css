@@ -183,7 +183,7 @@ a {
     justify-content: center;
     align-items: center;
     border: solid black;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(100%, 100%, 100%, 0.1);
 }
 .contact-title{
     padding: 35px;
