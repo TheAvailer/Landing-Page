@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* header */
 .icon {
     height: 30px;
     width: auto;
@@ -14,7 +15,7 @@ ul {
     display: flex;
     margin: 0px;
     padding: 12px;
-    gap: 16px;
+    gap: 32px;
     flex-direction: row;
 }
 a {
@@ -49,7 +50,7 @@ a {
     margin: 0px 16px;
 }
 
-
+/*body*/
 .body {
     display: flex;
     flex-direction: column;
@@ -98,8 +99,8 @@ a {
     display: flex;
     flex-direction: column;
     padding: 35px;
-    background-color: white;
-    color: black;
+    background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
     flex-wrap: wrap;
 }
 .portfolio-title{
@@ -109,28 +110,34 @@ a {
     font-size: 40px;
     font-weight: 400;
     padding: 35px;
-    border-bottom: black solid 1px;
+    border-bottom: rgb(140, 130, 115) solid 1px;
 }
 .portfolio-items {
     display: flex;
     flex: 1;
     flex-flow: row wrap;
-    justify-content:space-around;
+    justify-content:    space-around;
     align-items: center;
     margin: 35px;
     height: 220px;
 }
-.portfolio-item{
+.portfolio-item {
     display: flex;
-    flex: 1;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.portfolio-icon{
+.iconHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-icon {
     border-radius: 25px;
-    border: solid black 5px;
-    height: 150px;
-    width: 150px;
+    border: solid rgb(140, 130, 115) 5px;
+    border-color: rgb(111, 103, 91);
+    height: 100px;
+    width: 100px;
     padding: 30px;
     margin: 10px;
 }
@@ -144,7 +151,8 @@ a {
     display: flex;
     font-family: "sunflower";
     width: 260px;
-    text-align: center;
+    font-weight: lighter;
+    justify-content: center;
 }
 .portfolio-end{
     display: flex;
@@ -233,6 +241,7 @@ a {
 }
 
 
+/*footer*/
 .footer {
     display: flex;
     flex-direction: column;
